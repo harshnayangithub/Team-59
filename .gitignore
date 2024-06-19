@@ -1,0 +1,45 @@
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Environment Variables
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Build directories
+build/
+dist/
+out/
+
+# Static files
+public/static
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# VSCode
+.vscode/
+
+# Python virtual environment
+.venv/
+env/
+venv/
+ENV/
+__pycache__/
