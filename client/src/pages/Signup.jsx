@@ -36,7 +36,7 @@ const Login = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        'http://localhost:4000/signup',
+        'https://team-59-server.vercel.app/signup',
         {
           ...inputValue
         },

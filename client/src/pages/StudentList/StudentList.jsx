@@ -90,7 +90,7 @@ export default function StudentList({ studentClass }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data } = await axios.post("http://localhost:4000/student/getstudent",{
+        const { data } = await axios.post("https://team-59-server.vercel.app/student/getstudent",{
           studentClass
         });
         const test1 = data.allStudent;

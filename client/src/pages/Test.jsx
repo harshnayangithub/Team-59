@@ -15,7 +15,7 @@ const Test = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data } = await axios.get("http://localhost:4000/test/get");
+        const { data } = await axios.get("https://team-59-server.vercel.app/test/get");
         const test1 = data.allTest;
         const arr = test1.map((i) => ({ lvl: i.lvl, content: i.content }));
         setTest(arr);
@@ -59,7 +59,8 @@ const Test = () => {
     formData.append('text' , test[ind].content);
 
     try {
-      const response = await axios.post('http://localhost:8080/upload', formData, {
+      // here comes the ml model that needs to be deployed only then it will works
+      const response = await axios.post('https://team-59-server.vercel.app/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

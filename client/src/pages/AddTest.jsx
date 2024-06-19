@@ -35,7 +35,7 @@ const AddTest = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        'http://localhost:4000/test/add',
+        'https://team-59-server.vercel.app/test/add',
         {
           ...inputValue
         },
