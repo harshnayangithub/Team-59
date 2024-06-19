@@ -37,8 +37,3 @@ function App() {
 }
 
 export default App;
-// for an EC2 deployment.
-// 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
-
-// git clone https://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@github.com/harshnayangithub/Navjeevan.git
-// cd Navjeevan
